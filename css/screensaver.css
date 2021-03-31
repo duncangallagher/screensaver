@@ -1,0 +1,21 @@
+html {
+    background: url("../img/pexels-brett-sayles-6424244.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title-text {
+    color: #fff;
+    stroke: black;
+    stroke-width: 5;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    font-size: 7vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 3px 3px 50px 50px  rgba(0, 0, 0, 0.6);
+    -moz-box-shadow:    3px 3px 50px 50px rgba(0, 0, 0, 0.6);  
+    box-shadow:         3px 3px 50px 50px rgba(0, 0, 0, 0.6); 
+}
