@@ -1,13 +1,45 @@
 var show_data = [
     {
-        "title": "Girl of Many Colors",
-        "tags": ["Obscure", "Quirky", "Heartfelt"],
-        "image": "img/gomc.jpg"
+        "title": "The Workplace",
+        "font": "'Inconsolata', monospace",
+        "color": "#fff",
+        "tags": ["Sitcom", "Irreverant", "Bizarre"],
+        "image": "img/workplace.jpg"
     },
     {
-        "title": "show 2 test",
-        "tags": ["test", "test", "test"],
-        "image": "img/gomc.jpg"
+        "title": "Vampire Journals",
+        "font": "'Montez', cursive",
+        "color": "#BF2200",
+        "tags": ["Thrilling", "Drama", "Teen"],
+        "image": "img/vampire-journals.jpg"
+    },
+    {
+        "title": "CROSSERTON",
+        "font": "'Overpass', sans-serif",
+        "color": "#fff",
+        "tags": ["Romance", "Drama", "Era"],
+        "image": "img/crosserton.jpg"
+    },
+    {
+        "title": "DIM",
+        "font": "'Montserrat', sans-serif",
+        "color": "#fff",
+        "tags": ["Scifi", "Mind-bending", "Drama"],
+        "image": "img/light.jpg"
+    },
+    {
+        "title": "THE KING'S GAMBLE",
+        "font": "'Andada Pro', serif",
+        "color": "#fff",
+        "tags": ["Psychological", "Rousing", "Drama"],
+        "image": "img/kings-gamble.jpg"
+    },
+    {
+        "title": "Normal Things",
+        "font": "",
+        "color": "",
+        "tags": ["Scifi", "Comedy", "Teen"],
+        "image": ""
     }
 ]
 
@@ -24,12 +56,14 @@ const slideShowData = Vue.createApp({
         this.updateShow();
         setInterval(() => {
             this.updateShow();
-        }, 20000)
+        }, 15000)
     },
     methods: {
         updateShow() {
+            if (i == show_data.length) {
+                i = 0;
+            }
             this.active_show = show_data[i++];
-            console.log("show updated");
         },
         cancelAutoUpdate() {
             clearInterval(this.timer);

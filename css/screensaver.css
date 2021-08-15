@@ -16,7 +16,7 @@ html, body {
     background-size: cover;
     background-repeat: repeat-x;
     background-position: left;
-    animation: slide 20s linear infinite;
+    animation: slide 15s linear infinite;
 }
 
 @keyframes slide {
@@ -24,14 +24,14 @@ html, body {
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(-600px, 0, 0);
+        transform: translate3d(-350px, 0, 0);
     }
 }
 
 .title-text {
-    color: #fff;
     stroke: black;
     stroke-width: 5;
+    font-display: block;
     position: fixed;
     bottom: 5%;
     left: 5%;
@@ -40,8 +40,7 @@ html, body {
     -webkit-box-shadow: 3px 3px 100px 100px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 3px 3px 100px 100px rgba(0, 0, 0, 0.6);
     box-shadow: 3px 3px 100px 100px rgba(0, 0, 0, 0.6);
-    z-index: 99;
-    font-family: 'Satisfy', cursive;
+    z-index: 98;
 }
 
 .tags {
@@ -50,9 +49,9 @@ html, body {
     stroke-width: 5;
     position: fixed;
     bottom: 5%;
-    left: 5%;
+    left: 3%;
     font-size: 1.5vw;
-    z-index: 99;
+    z-index: 98;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -81,4 +80,15 @@ ul li:not(:last-child) {
 
 li ul {
     display: none;
+}
+
+.logo {
+    position: absolute;
+    right: 5vw;
+    bottom: 5vh;
+    width: 12vw;
+    height: auto;
+    z-index: 98;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
 }
