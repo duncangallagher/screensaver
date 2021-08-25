@@ -7,11 +7,18 @@ var show_data = [
         "image": "img/workplace.jpg"
     },
     {
-        "title": "Vampire Journals",
-        "font": "'Montez', cursive",
-        "color": "#BF2200",
-        "tags": ["Thrilling", "Drama", "Teen"],
-        "image": "img/vampire-journals.jpg"
+        "title": "NORMAL THINGS",
+        "font": "'Abril Fatface', serif",
+        "color": "#ff1515",
+        "tags": ["Scifi", "Action", "Adventure"],
+        "image": "img/normal-things.jpg"
+    },
+    {
+        "title": "THE KING'S GAMBLE",
+        "font": "'Andada Pro', serif",
+        "color": "#fff",
+        "tags": ["Psychological", "Rousing", "Drama"],
+        "image": "img/kings-gamble.jpg"
     },
     {
         "title": "CROSSERTON",
@@ -28,18 +35,11 @@ var show_data = [
         "image": "img/light.jpg"
     },
     {
-        "title": "THE KING'S GAMBLE",
-        "font": "'Andada Pro', serif",
-        "color": "#fff",
-        "tags": ["Psychological", "Rousing", "Drama"],
-        "image": "img/kings-gamble.jpg"
-    },
-    {
-        "title": "Normal Things",
-        "font": "",
-        "color": "",
-        "tags": ["Scifi", "Comedy", "Teen"],
-        "image": ""
+        "title": "Vampire Journals",
+        "font": "'Montez', cursive",
+        "color": "#BF2200",
+        "tags": ["Thrilling", "Dark", "Teen"],
+        "image": "img/vampire-journals.jpg"
     }
 ]
 
@@ -60,6 +60,7 @@ const slideShowData = Vue.createApp({
     },
     methods: {
         updateShow() {
+            // loop through show data
             if (i == show_data.length) {
                 i = 0;
             }

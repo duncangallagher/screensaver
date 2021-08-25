@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/notflix.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Satisfy&display=swap&family=Inconsolata&family=Montez&family=Inconsolata&family=Montez&family=Overpass:wght@700&family=Montserrat:wght@100&family=Andada+Pro&family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="js/vue-2.3.6.min.js"></script>
+    <!--
+    Free stock images courtesy of Pexels.com
+    Vlada Karpovich, Atahan Demir, CottonBro
+    and Freestocks.org
+    -->
+</head>
+
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <div class="sliding-background" v-bind:style="{ backgroundImage:'url('+active_show.image+')' }"></div>
+        </div>
+        <h1 class="title-text" v-bind:style="{ fontFamily: active_show.font , color: active_show.color }">{{active_show.title}}</h1>
+        <ul class="tags">
+            <li v-for="tag in active_show.tags" v-bind:key="tag">{{tag}}</li>
+        </ul>
+        <img class="logo" src="img/notflix-logo.png">
+    </div>
+</body>
+<script src="js/controller.js">
+</script>
+
+</html>
