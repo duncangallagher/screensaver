@@ -14,6 +14,7 @@ html, body {
     background-repeat: repeat-x;
     background-position: left;
     animation: slide 15s linear infinite, backgroundFade linear 15s infinite;
+    box-shadow: 0 0 50vh rgba(0,0,0,0.9) inset;
 }
 
 @keyframes slide {
